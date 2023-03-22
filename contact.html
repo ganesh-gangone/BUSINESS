@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENTLEMEN'S contact us</title>
+    <link rel="shortcut icon" type="x-icon" href="log.jpg">
+    <link rel="stylesheet" href="HOME.CSS">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<!-- nav bar -->
+<style>
+    *{
+    padding: 0 0px;
+    margin: 0; 
+    
+    }
+    .navbar nav {
+     width:100%;
+     height: 100px;
+    }
+    .navbar ul a {
+     line-height: 100px;
+    
+    }
+    .navbar ul li {
+     list-style: none;
+     display: inline-block;
+     
+     align-items: end;
+     line-height: 100px;
+    }
+    .navbar ul li a {
+     display: block;
+     text-decoration: none;
+     font-size: 16px;
+     font-family: arial ;
+     font-weight: bold;
+     text-transform: uppercase;
+     color: #000000;
+     padding: 1px 15px;
+     margin: 10px;
+     transition: .5s;
+     background:rgb(255, 255, 255);
+      
+      height:1vh;
+    }
+    .navbar ul li a:hover {
+      background:rgb(255, 0, 217);
+      
+      height:1vh;
+     color: rgb(255, 0, 255);
+     transition: .5s;
+     font-size: 18px;
+    }
+    .navbar {
+      
+    padding: 1vmax 0;
+    border-bottom: none;
+    background: #ffffff;
+    
+    }
+    .btn1{
+
+background-color: #ff00cc;
+ height:40px; 
+ width: 150px;
+ font-size: 16px;
+ font-family: arial;
+ color:#ffffff;
+ border-radius:25px;
+transition: .4s;
+}
+.btn1:hover
+{
+
+background-color: #000000;
+height:50px; 
+width: 180px;
+font-size: 30px;
+
+
+color:#ff00ff;
+border-radius:25px;
+
+transition: .4s;
+
+
+}
+    
+    </style>
+    <style>
+        
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+   
+}
+section{
+    display : flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;
+    background: #f064cb;
+
+}
+section::before
+{
+    content: "";
+    position : absolute;
+    top: 122px;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+}
+
+.maincontainer
+{
+    position : relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+    
+}
+.maincontainer .contactinfo
+{
+    /*position: absolute;
+     height:calc(100% - 120px);*/
+
+    top: 40px;
+    width:350px;
+   
+    background: #ff48f0;
+    z-index: 1;
+    padding: 70px;
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    justify-content:space-between;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.15);
+
+}
+.maincontainer .contactinfo h2
+{
+    color: #fff;
+    font-size:24px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.maincontainer .contactinfo ul.infobox 
+{
+    position: relative;
+    margin: 20px 0px;
+}
+.maincontainer .contactinfo ul.infobox li
+{
+    position: relative;
+    margin: 20px 0px;
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+    align-items: flex-start;
+}
+.contactinfo .infobox div
+{
+    display:flex;
+    
+    align-items: center;
+    margin-bottom:10px;
+    
+ 
+}
+
+.contactinfo .infobox div span {
+    min-width: 40px;
+    height: 40px;
+    color: #180909;
+    background: #ea1538;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.maincontainer .contactform
+{
+    position: absolute;
+    padding: 70px 50px;
+    padding-left: 250px;
+    margin-left: 150px;
+    width: calc(100% - 150px);
+    height: 100%;
+    background: #ffffff;
+    box-shadow: 0 50px 50px rgba(0,0,0,0.25);
+    
+
+}
+.maincontainer .contactform h2
+{
+    color: #0f3959;
+    font-size: 24px;
+    font-weight: 500;
+
+}
+.maincontainer .contactform .formbox
+{
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.maincontainer .contactform .formbox .inputbox
+{
+    position: relative;
+    margin-bottom: 35px;
+}
+.maincontainer .contactform .formbox .inputbox.w50
+{
+    width: 47%;
+}
+.maincontainer .contactform .formbox .inputbox.w100
+{
+    width: 100%;
+
+}
+.maincontainer .contactform .formbox .inputbox input,
+.maincontainer .contactform .formbox .inputbox textarea
+{
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color:#333;
+    border: none;
+    outline:none;
+    border-bottom: 1px solid #777;
+
+
+}
+.maincontainer .contactform .formbox .inputbox textarea
+{
+    height: 120px;
+
+}
+.maincontainer .contactform .formbox .inputbox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 18px;
+    font-weight:300;
+    transition:0.3s;
+}
+.maincontainer .contactform .formbox .inputbox input:focus ~ span,
+.maincontainer .contactform .formbox .inputbox input:valid ~ span,
+.maincontainer .contactform .formbox .inputbox textarea:focus ~ span,
+.maincontainer .contactform .formbox .inputbox textarea:valid ~ span
+{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #095a55;
+
+}
+.maincontainer .contactform .formbox .inputbox input[type="submit"]
+{
+    position: relative;
+    cursor: pointer;
+    background:#000000;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+.maincontainer .contactform .formbox .inputbox input[type="submit"]:hover
+{
+    background: red;
+
+}
+
+
+
+.contactinfo
+{
+    background: #0f0f11;
+    border-radius: 5px;
+}
+.info h3{
+    color: #faf6f6;
+
+}
+.contactinfo .infobox div
+{
+    display:flex;
+    
+    align-items: center;
+    margin-bottom:10px;
+    
+ 
+}
+.contactinfo .infobox div span
+{
+  min-width: 40px; 
+  height: 40px;
+  color: #180909;
+  background: #ffffff; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  border-radius: 50%;
+  margin-right: 15px;
+  
+  
+}
+.contactinfo .infobox div span:hover
+{
+    background:#0000;
+    color:#fff;
+}
+.social
+{
+    margin-top: 40px ;
+    display: flex;
+    margin: 15px;
+}
+.social li
+{
+    list-style: none;
+    margin: 10px;
+}
+.social li a
+{
+    color: #fff;
+    font-size: 1.7em;
+    
+}
+
+.social li a :hover
+{
+   color: #000000; 
+   
+   transition : 0.2s;
+
+}
+.maincontainer .contactinfo .infobox .social .lin .a
+{
+    color: #000;
+}
+.maincontainer .contactinfo .infobox .social .lin .a:hover
+{
+    color: #ffffff;
+}
+
+/* -----------------footer------------  */
+
+.footer {
+    background-color: #24262d;
+    padding: 70px 0;
+}
+
+.container {
+    max-width: 1170px;
+
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+
+}
+
+/*
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+*/
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+
+
+/* RESPONSIVE FOR 1200 990 600  */
+
+
+
+@media (max-width: 1200px)
+{
+    .maincontainer
+    {
+        width: 90%;
+        min-width: auto;
+        margin: 20px;
+        box-shadow: none;
+    }
+    .maincontainer .contactinfo
+    {
+        top: 0;
+        height: 550px;
+        position: relative;
+        box-shadow: none;
+    }
+    .maincontainer .contactform
+    {
+        position: relative;
+        width: calc(100% - 350px);
+        padding-left: 0;         
+        margin-left: 0;
+        padding: 40px;
+        height: 550px;
+        box-shadow: none;
+
+    }
+}
+
+@media (max-width: 991px)
+{
+    section
+    {
+        background: #ffffff;
+
+    }
+    
+    section::before
+    {
+        display:none;
+
+    }
+    .maincontainer
+    {
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    .maincontainer .contactform
+    {
+        width: 100%;
+        height: auto;
+        
+    }
+    .maincontainer .contactinfo
+    {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+    }
+    .maincontainer .contactinfo ul.sci
+    {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navhide.mobile-menu {
+    margin-left: 0;
+    display: table-column-group;
+}
+}
+@media (max-width: 600px)
+{
+    .maincontainer .contactform
+    {
+        padding: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .navhide.mobile-menu {
+    margin-left: 0;
+    display: table-column-group;
+}
+    .maincontainer .contactinfo ul.sci
+    {
+        margin-top:40px
+    }
+    .maincontainer .contactform .formbox .inputbox.inputbox.w50
+    {
+        width: 100%;
+    }
+
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img id="logo" src="https://img.freepik.com/premium-vector/barbershop-logo-design-inspiration_513585-96.jpg?size=626&ext=jpg" 
+            style="float: left; width:auto; height:5em; margin-top:2%; margin-bottom:0.5em;"></a>
+        
+          </div>
+              <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="prices.html">Prices</a></li>
+            <li><a href="bookform.html">
+              <button class="btn1" >Book Now</button>
+              </a></li>
+          </ul>
+         </nav>
+         
+         
+      </div>
+ 
+      <hr>
+       
+    <section>
+        <div class="maincontainer">
+
+            <div class="contactinfo">
+               
+                <div class="infobox">
+                    <h3>Contact info</h3>
+                    <div class="lin">
+                        <span><ion-icon name="location-outline"></ion-icon></span>
+                        <p>Area,pin(501510)<br>INDIA</p>
+                    </div>
+                    <div  class="lin">
+                        <span><ion-icon name="mail-open-outline"></ion-icon></span>
+                        <a >abc@gmail.com</a>
+                    </div>
+                    <div  class="lin">
+                        <span><ion-icon name="call-outline"></ion-icon></span>
+                           <a >917xxxxxxx25</a>
+                    </div>
+                    <ul class="social">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        
+                    </ul>
+                </div>
+            
+            
+            </div>
+            
+            <div class="contactform">
+
+                <h2>Send a Mesaage</h2>
+                <div class="formbox">
+                    <div class="inputbox w50">
+                        <input type="text" required>
+                        
+                        <span>First Name</span>
+                    </div>
+                    <div class="inputbox w50">
+                        <input type="text" required>
+                        <span>Last Name</span>
+                    </div>
+                    <div class="inputbox w50">
+                        <input type="text" required>
+                        <span>Email Address</span>
+                    </div>
+                    <div class="inputbox w50">
+                        <input type="number" required>
+                        <span>phone number</span>
+                    </div>
+                    <div class="inputbox w100">
+                        <textarea required></textarea>
+                        <span>Write your message here...</span>
+                    </div>
+                    <div class="inputbox w100">
+                        <input type="submit" value="Send">
+                        
+                    </div>
+
+                </div>
+            </div>
+            
+            
+
+        </div>
+    </section>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="navbar.js"></script>
+    
+</body>
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <div class="underline"></div>
+          <ul>
+            <li><a href="service.html">about styles</a></li>
+            <li><a href="service.html">our services</a></li>
+            <li><a href="service.html">privacy policy</a></li>
+            <li><a href="index.html">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Menu Navigation</h4>
+          <div class="underline"></div>
+          <ul>
+            <li><a href="home.css">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="underline"></div>
+          <div class="social-links">
+            <a href="index.html"><i class="fab fa-facebook-f"></i></a>
+            <a href="index.html"><i class="fab fa-twitter"></i></a>
+            <a href="index.html"><i class="fab fa-instagram"></i></a>
+            <a href="index.html"><i class="fab fa-linkedin-in"></i></a>
+            <a href="index.html"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </footer>
+</html>
